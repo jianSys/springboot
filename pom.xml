@@ -18,10 +18,15 @@
         <!--整合Thymeleaf模板引擎-->
         <module>springboot-thymeleaf</module>
         <!--整合freemarker模板-->
-        <module>springboot_freemarker</module>
+        <module>springboot-freemarker</module>
+        <!--逆向工程-->
         <module>springboot-generator</module>
+        <!--验证码-->
         <module>springboot-verifycode</module>
+        <!--整合聊天websocket-->
         <module>springboot-websocket</module>
+        <!--整合swagger-->
+        <module>springboot-swagger</module>
     </modules>
     <!--springboot项目必须要继承的父工程-->
     <parent>

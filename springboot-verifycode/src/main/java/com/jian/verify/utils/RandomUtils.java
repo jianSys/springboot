@@ -12,6 +12,7 @@ import java.util.Random;
  * @Version: 1.0
  */
 public class RandomUtils extends org.apache.commons.lang3.RandomUtils {
+
     private static final char[] CODE_SEQ = { 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J',
             'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W',
             'X', 'Y', 'Z', '2', '3', '4', '5', '6', '7', '8', '9' };

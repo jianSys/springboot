@@ -25,19 +25,19 @@ public class VerifyController {
     public void verifyCode(HttpServletRequest request, HttpServletResponse response) {
     IVerifyCodeGen codeGen = new SimpleCharVerifyCodeGen();
     try {
-//设置长宽
+        //设置长宽
         VerifyCode verifyCode = codeGen.generate(80, 28);
         String code = verifyCode.getCode();
 
-//将VerifyCode绑定session
+        //将VerifyCode绑定session
         request.getSession().setAttribute("VerifyCode", code);
-//设置响应头
+        //设置响应头
         response.setHeader("Pragma", "no-cache");
-//设置响应头
+        //设置响应头
         response.setHeader("Cache-Control", "no-cache");
-//在代理服务器端防止缓冲
+        //在代理服务器端防止缓冲
         response.setDateHeader("Expires", 0);
-//设置响应内容类型
+        //设置响应内容类型
         response.setContentType("image/jpeg");
         response.getOutputStream().write(verifyCode.getImgBytes());
         response.getOutputStream().flush();
